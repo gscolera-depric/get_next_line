@@ -19,14 +19,14 @@
 # include <fcntl.h>
 # include <stdlib.h>
 
-typedef struct	s_file
+typedef struct			s_file
 {
-	char			*data;
-	int				fd;
-	int				ret;
-	struct s_file	*next;
+	char				*data;
+	int					fd;
+	int					ret;
+	struct s_file		*next;
 }				t_file;
 
-int				get_next_line(const int fd, char **line);
+int						get_next_line(const int fd, char **line);
 
 #endif
